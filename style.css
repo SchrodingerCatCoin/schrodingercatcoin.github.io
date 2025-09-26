@@ -34,10 +34,14 @@ justify-content: space-evenly;
 header.grande h1 {
 font-size: 4rem;
 font-family: 'Nabla';
+text-shadow: 0 0 48px;
 }
 
 header.grande h2 {
 font-size: 2rem;
+font-weight: 900;
+letter-spacing: 4px;
+text-shadow: 0 0 48px;
 }
 
 main {
@@ -82,8 +86,8 @@ color: currentColor;
 }
 
 menu.secondary li {
-border: none;
-background-color: #333;
+border-color: black;
+background-color: #1e1e1e;
 border-radius: 4px;
 color: #999;
 }
@@ -107,6 +111,17 @@ margin: 0;
 
 p {
 line-height: 2;
+font-size: 1.1em
+}
+
+tt {
+display: inline-block;
+font-family: monospace;
+font-size: 1.25em;
+border-radius: 4px;
+background-color: #1e1e1e;
+padding: 1em;
+cursor: pointer;
 }
 
 menu li:hover, button:hover, .button:hover, button.accent, menu li.accent, .button.accent {
@@ -117,15 +132,31 @@ color: black;
 .info {
 padding: 1em;
 border: 1px solid #f6cc48;
-background-color: #f6cc48;
-border-radius: 6px;
-color: black !important;
+background-color: #507040;
+color: white !important;
 max-width: 80ch;
+text-align: center;
 }
 
 .info button, .info .button {
 background-color: black;
 color: white;
+}
+
+details {
+padding: 1em;
+border: 1px solid #1e1e1e;
+width: 100%;
+cursor: pointer;
+}
+
+summary {
+font-size: 1.2em;
+}
+
+[open] summary {
+font-weight: bold;
+margin-bottom: 1em;
 }
 
 section h2 {
@@ -142,6 +173,9 @@ padding: 0;
 @media only screen and (max-width: 900px) {
 ul.list{
 flex-direction: column;
+}
+header.grande h1, header.grande h2 {
+font-size: revert;
 }
 }
 
