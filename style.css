@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Doto:wght@100..900&family=Nabla&display=swap');
+
+html, body {
+padding: 0; margin: 0;
+background: black;
+color: white;
+font-family: 'DM Sans', sans-serif;
+}
+
+header, footer, menu, .flex, .list {
+display: flex;
+}
+
+body>header {
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 2em;
+}
+
+header.grande {
+min-height: 80vh;
+border-bottom: 4px solid #f6cc48;
+background-color: #1e1e20;
+background-image: linear-gradient(transparent, #000000), url(/images/mpv-shot0001.jpg);
+background-size: cover;
+background-attachment: fixed;
+background-position: bottom;
+text-shadow: 0 0 4px black;
+justify-content: space-evenly;
+}
+
+header.grande h1 {
+font-size: 4rem;
+font-family: 'Nabla';
+}
+
+header.grande h2 {
+font-size: 2rem;
+}
+
+main {
+padding: 1<em;
+margin: 0 auto;
+max-width: 100ch;
+}
+
+menu {
+padding: 0;
+margin: 0;
+}
+
+menu, .list, header {
+row-gap: 1em;
+column-gap: 1em;
+}
+
+.column {
+flex-direction: column;
+}
+
+nav.list {
+align-items: center;
+}
+
+menu li {
+list-style: none;
+}
+
+menu li, button, .button, button.accent:hover, .button.accent:hover, menu li.accent:hover {
+display: inline-block;
+padding: 0.5em 1em;
+border: 1px solid #1e1e1e;
+border-radius: 100vw;
+background-color: black;
+color: white;
+}
+menu a, .info a {
+text-decoration: none;
+color: currentColor;
+}
+
+menu.secondary li {
+border: none;
+background-color: #333;
+border-radius: 4px;
+color: #999;
+}
+
+menu li.grande, button.grande, .button.grande {
+font-size: 1.5em;
+padding: 0.5em 2em !important;
+}
+
+a, .accent, h1, header h2, .card h3 {
+color: #f6cc48;
+}
+
+h1, h2, .doto {
+font-family: 'Doto';
+}
+
+header h1, header h2 {
+margin: 0;
+}
+
+p {
+line-height: 2;
+}
+
+menu li:hover, button:hover, .button:hover, button.accent, menu li.accent, .button.accent {
+background-color: #f6cc48;
+color: black;
+}
+
+.info {
+padding: 1em;
+border: 1px solid #f6cc48;
+background-color: #f6cc48;
+border-radius: 6px;
+color: black !important;
+max-width: 80ch;
+}
+
+.info button, .info .button {
+background-color: black;
+color: white;
+}
+
+section h2 {
+text-align: center;
+color: #777;
+text-transform: uppercase;
+}
+
+ul.list {
+list-style: none;
+padding: 0;
+}
+
+@media only screen and (max-width: 900px) {
+ul.list{
+flex-direction: column;
+}
+}
+
+.card {
+min-width: 100px;
+min-height: 100px;
+padding: 1em;
+border-radius: 6px;
+border: 1px solid #1e1e1e;
+background-color: black;
+color: white;
+text-align: center;
+}
+
+* {
+transition: all 250ms ease;
+}

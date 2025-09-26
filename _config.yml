@@ -1,0 +1,12 @@
+title: Schrodinger
+email: 
+description: >-
+    
+baseurl: ""
+url: ""
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+plugins:
+  - jekyll-feed

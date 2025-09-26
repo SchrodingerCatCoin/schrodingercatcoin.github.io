@@ -1,0 +1,152 @@
+---
+layout: default
+---
+
+<header class="grande">
+	<div>
+	<div class="imagecontainer"><img src="/images/catcoin.png" id="catcoin" width="200"></div>
+	<h1 id="titlebig">$SCHRODINGER</h1>
+	<h2>The Quantum Cat Coin</h2>
+	</div>
+
+	<nav class="list column">
+		<menu>
+			<li class="accent grande doto"><a href="/">Buy Now</a>
+		</menu>
+		<menu>
+			<li><a href="#charts">View Charts</a>
+			<li><a href="#faq">FAQ</a>
+		</menu>
+	</nav>
+
+	<nav>
+		<menu class="secondary">
+			<li><a href="/">X</a>
+			<li><a href="/">Telegram</a>
+			<li><a href="/">TikTok</a>
+		</menu>
+	</nav>
+</header>
+
+<main class="list column">
+	<div class="info"><p>We are proud to announce we opened our official Telegram Group for the best memecoin community ever: The Quantum Cat community. Let’s break the charts🔥🚀🚀</p>
+
+		<a class="button" href="https://t.me/QuantumCatCommunity">Join the Telegram Group</a>
+	</div>
+
+	<section id="about">
+		<h2>The what now?...</h2>
+
+		<p>Erwin Schrödinger was an Austrian physicist and one of the founders of quantum mechanics. In 1935 he imagined a strange thought experiment, now legendary: the cat in the box. A cat is locked inside with a device triggered by the decay of a single atom. If the atom decays, the cat dies; if not, it lives. Quantum rules say that until we open the box, the atom (= the cat) are in a weird superposition of alive and dead at the same time. Schrödinger didn’t actually want to kill cats, but to show how bizarre and mind-bending quantum reality can be when applied to everyday life.</p>
+	</section>
+
+	<section id="specs">
+		<h2>About $SCHRODINGER</h2>
+
+		<ul class="list">
+			<li class="card">
+				<h3>Supply</h3>
+				<big>1T</big>
+			</li>
+			<li class="card">
+				<h3>Selling In</h3>
+				<big>Solana (SOL)</big>
+			</li>
+			<li class="card">
+				<h3>LP Tokens</h3>
+				<big>Burned at finalize</big>
+			</li>
+			<li class="card">
+				<h3>Fees</h3>
+				<big>0%</big>
+			</li>
+		</ul>
+
+		<div class="list">
+		chart here
+
+		legend here
+		</div>
+
+	</section>
+
+	<section id="buy">
+		<h2>Buy it now?</h2>
+
+		<menu>
+			<li><a href="/">View on Screener</a>
+			<li class="accent"><a href="/">Buy</a>
+		</menu>
+
+		<p>Contract Address</p>
+		<tt>...</tt>
+	</section>
+
+	<section id="faq">
+		<h2>FAQ</h2>
+
+		<ul class="list column">
+			<li><details><summary>faqentry1?</summary>si</details>
+			<li><details><summary>faqentry2?</summary>liquidita</details>
+			<li><details><summary>faqentry3?</summary>boh</details>
+		</ul>
+	</section>
+</main>
+
+<footer>
+</footer>
+
+<style>
+main {
+row-gap: 4em;
+align-items: center;
+}
+main>section {
+padding: 2em;
+align-items: center;
+flex-direction: column;
+display: flex;
+}
+main>section p {
+max-width: 100ch;
+}
+
+.imagecontainer {
+position: relative;
+transform: translateY(70px);
+z-index: -10;
+overflow: hidden;
+}
+
+@keyframes intro-fade {
+from { opacity: 0; } to { opacity: 1; }
+}
+@keyframes hero-scroll {
+from { background-position: top; height: 0px; filter: blur(16px); } to { background-position: bottom; height: unset; filter: none; }
+}
+@keyframes nabla-bold {
+from { font-variation-settings: 'EDPT' 55; letter-spacing: -0.33em; } to { font-variation-settings: 'EDPT' 100; letter-spacing: 0.33em; }
+}
+@keyframes coin-reveal {
+from { transform: translateY(140%) scale(1.5); } to { transform: none; }
+}
+@keyframes coin-blow {
+from { transform: scale(1); } to { transform: scale(1.2); }
+}
+
+.imagecontainer>img#catcoin {
+animation: coin-reveal 2s ease forwards;
+}
+.imagecontainer {
+animation: coin-blow 2s ease alternate infinite;
+}
+body>header.grande {
+animation: hero-scroll 2s ease forwards;
+}
+#titlebig {
+animation: nabla-bold 2s ease-out forwards;
+}
+* {
+animation: intro-fade 1.5s ease forwards;
+}
+</style>
